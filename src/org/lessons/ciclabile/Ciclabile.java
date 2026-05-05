@@ -1,0 +1,37 @@
+package org.lessons.ciclabile;
+
+public class Ciclabile {
+
+    private int[] nums;
+    private int i=0;
+
+    //COSTRUTTORE
+    public Ciclabile(int[] nums){
+        this.nums=nums;
+    }
+
+    //GETTER & SETTER
+    public int[] getNums(){
+        return this.nums;
+    }
+
+    public void setNums(int[] nums){
+        this.nums=nums;
+    }
+
+    //ALTRI METODI
+    public int getElementoSuccessivo(){
+        i++;
+        if(i>nums.length){
+            return -1;
+        }
+        return nums[i-1];
+    }
+
+    public boolean hasAncoraElementi(){
+        return i+1>nums.length?false:true;   
+    }
+
+
+
+}
