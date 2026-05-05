@@ -27,6 +27,18 @@ public class Main {
         x=test.getElementoSuccessivo();
         System.out.println(x);
 
+        System.out.println("---------- BONUS --------------");
+
+        Ciclabile bonus = new Ciclabile();
+        System.out.println(bonus.hasAncoraElementi());
+        bonus.addElemento(99);
+        System.out.println(bonus.hasAncoraElementi());
+        int tmpBonus = bonus.getElementoSuccessivo();
+        System.out.println(tmpBonus);
+        bonus.addElemento(101);
+        System.out.println(bonus.hasAncoraElementi());
+        tmpBonus = bonus.getElementoSuccessivo();
+        System.out.println(tmpBonus);
 
     }
 }

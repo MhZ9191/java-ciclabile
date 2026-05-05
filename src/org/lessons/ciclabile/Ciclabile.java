@@ -6,6 +6,11 @@ public class Ciclabile {
     private int i=0;
 
     //COSTRUTTORE
+
+    public Ciclabile(){
+        this.nums=new int[0];
+    }
+
     public Ciclabile(int[] nums){
         this.nums=nums;
     }
@@ -32,6 +37,13 @@ public class Ciclabile {
         return i+1>nums.length?false:true;   
     }
 
-
+    public void addElemento(int numero){
+        int[] tmp = new int[nums.length+1];
+        for(int i=0;i<nums.length;i++){
+            tmp[i]=nums[i];
+        }
+        tmp[nums.length]=numero;
+        this.nums=tmp;
+    }
 
 }
