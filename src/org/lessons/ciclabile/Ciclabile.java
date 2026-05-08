@@ -46,4 +46,8 @@ public class Ciclabile {
         this.nums=tmp;
     }
 
+    public void checkSituation(){
+        System.out.printf("%nIndice attuale: \u001B[35m%d\u001B[0m%nLunghezza array: \u001B[34m%d\u001B[0m%n%n",this.i,this.nums.length);
+    }
+
 }

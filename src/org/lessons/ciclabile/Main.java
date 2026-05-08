@@ -6,39 +6,62 @@ public class Main {
         
         int[] n = {1,12,13,14}; 
         Ciclabile test = new Ciclabile(n);
-        
 
-        boolean ancoraElementi = test.hasAncoraElementi();
-        System.out.println(ancoraElementi);
+        Functions.printTest(test);
+
         int x = test.getElementoSuccessivo();
-        System.out.println(x);
+        Functions.printX(x);
+        
         x=test.getElementoSuccessivo();
-        System.out.println(x);
-        ancoraElementi = test.hasAncoraElementi();
-        System.out.println(ancoraElementi);
+        Functions.printX(x);
+        
+        Functions.printTest(test);
+        
         x=test.getElementoSuccessivo();
-        System.out.println(x);
-        ancoraElementi = test.hasAncoraElementi();
-        System.out.println(ancoraElementi);
+        Functions.printX(x);
+        
+        Functions.printTest(test);
+        
         x=test.getElementoSuccessivo();
-        System.out.println(x);
-        ancoraElementi = test.hasAncoraElementi();
-        System.out.println(ancoraElementi);
+        Functions.printX(x);
+        
+        Functions.printTest(test);
+        
         x=test.getElementoSuccessivo();
-        System.out.println(x);
+        Functions.printX(x);
 
-        System.out.println("---------- BONUS --------------");
+        System.out.println();
+        System.out.println(Color.BGREEN + "---------- BONUS --------------" + Color.RESET);
+        System.out.println();
 
         Ciclabile bonus = new Ciclabile();
-        System.out.println(bonus.hasAncoraElementi());
+        
+        Functions.printTest(bonus);
+        
         bonus.addElemento(99);
-        System.out.println(bonus.hasAncoraElementi());
+
+        Functions.printTest(bonus);
+            
         int tmpBonus = bonus.getElementoSuccessivo();
-        System.out.println(tmpBonus);
+        Functions.printX(tmpBonus);
+
         bonus.addElemento(101);
-        System.out.println(bonus.hasAncoraElementi());
+
+        Functions.printTest(bonus);
+        
+        bonus.checkSituation();
+
         tmpBonus = bonus.getElementoSuccessivo();
-        System.out.println(tmpBonus);
+        Functions.printX(tmpBonus);
+
+        bonus.checkSituation();
+
+        tmpBonus = bonus.getElementoSuccessivo();
+        Functions.printX(tmpBonus);
+
+        bonus.checkSituation();
+
+
 
     }
 }
